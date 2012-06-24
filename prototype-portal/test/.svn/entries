@@ -1,0 +1,58 @@
+8
+
+dir
+7
+http://svn.itseb.com/public/prototype-portal/trunk/test
+http://svn.itseb.com/public/prototype-portal
+
+
+
+2007-10-03T15:15:16.081815Z
+7
+seb
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+969fb757-a038-0410-83e7-e5f69b27c195
+
+images
+dir
+
+index.html
+file
+
+
+
+
+2008-07-12T09:26:08.531250Z
+5084e4cbd1e99834af2b6a1f5c97b56a
+2007-10-03T15:15:16.081815Z
+7
+seb
+
+stylesheets
+dir
+
+multi_portal.html
+file
+
+
+
+
+2008-07-12T09:26:08.546875Z
+7597af692cffca3082bb4399253ab977
+2007-09-04T20:24:19.712104Z
+6
+seb
+

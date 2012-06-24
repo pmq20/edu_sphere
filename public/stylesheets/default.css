@@ -1,0 +1,266 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:12px;
+}
+a{
+	color:#375FCF;
+}
+a:hover{
+	color:#5F9FCF;
+}
+img{
+	vertical-align:middle;
+}
+/*-------------HEAD---------------*/
+#header_wrapper{
+	background-color: #F7EFFF;
+}
+#top0{
+	/*position:absolute;
+	right:0;
+	top:0;*/
+	float:right;
+	border: 1px solid #FFF;
+}
+#top0 span{
+	cursor: pointer;
+	color:#5F5F5F;
+	padding: 2px 6px 2px 6px;
+	background-color: #CFDFDF;
+	border-left: 1px solid #FFF;
+}
+#top0 span.pic{
+	background-color: #C7CFD7;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+#top0 span.topblock{
+	cursor: default;
+	padding:0;
+	border: none;
+}
+#top0 span.username{
+	cursor: default;
+	padding-top:0;
+	font-weight: bold;
+}
+
+#logo{
+	position:absolute;
+	left:0;
+	top:0;
+}
+#top1{
+	margin-top: 5px;
+	float:right;
+}
+#top1 a{
+	color:#37005F;
+	margin: 0px 3px 0px 3px;
+}
+#top1 a:hover{
+	color:#87777F
+}
+#top1 input{
+	vertical-align:middle;
+	font-size: 12px;
+	height:14px;
+	margin: 0px 3px 0px 3px;
+}
+#top1 img{
+	margin: 0px 1px 0px 1px;
+}
+#navigation{
+	background-color: #5F379F;
+	margin-top: 6px;
+	height:19px;
+	line-height:19px;
+}
+#navigation li{
+	border-right:1px solid #FFF;
+	background-color: #5F4FA7;
+	float:left;
+	list-style-type:none;
+	white-space:nowrap;
+}
+#navigation li.arrow{
+	background-color: #87777F;
+}
+#navigation li.arrowleft{
+	background-color: #5F379F;
+	padding-left:25px;
+}
+#navigation li.selected{
+	background-color: #FFF;
+}
+#navigation li.selected a{
+	color:#000;
+}
+#navigation img{
+	padding-left:5px;
+	padding-right:5px;
+}
+#navigation li a{
+	background-color:inherit;
+	color:#FFF;
+	text-decoration: none;
+	display:block;
+	padding: 0px 10px;
+}
+#navigation li a:hover{
+	background-color:#5F379F;
+}
+#navigation_slv{
+	background-color: #775F9F;
+	margin-top: 1px;
+	height:18px;
+	line-height:18px;
+}
+#navigation_slv li{
+	border-right:1px solid #FFF;
+	background-color: #CFCFD7;
+	float:left;
+	list-style-type:none;
+	white-space:nowrap;
+}
+#navigation_slv li a{
+	background-color:inherit;
+	color:#000;
+	text-decoration: none;
+	display:block;
+	padding: 0px 10px;
+}
+#navigation_slv li a:hover{
+	background-color: #FFF;
+}
+#navigation_slv li.selected{
+	background-color: #FFF;
+}
+#navigation_slv li.arrowleft{
+	background-color: #775F9F;
+	padding-left:23px;	
+}
+#content{
+	display: block;
+}
+/*-------------utils---------------*/
+.cursor_qstmark{
+	cursor: help;
+}
+.cleanner{
+	clear: both;
+}
+/*-------------box---------------*/
+.box{
+	float:left;
+	display: block;
+	border: 1px solid #CFDFDF;
+	margin-bottom:12px;
+}
+#release_box{
+	width:287px;
+	height:361px;
+	float:left;
+	margin: 12px;
+	display: block;
+}
+.box .box_title{
+	padding-left: 2px;
+	background-color: #DFDFDF;
+	height:18px;
+	line-height:18px;
+}
+.box .box_title img{
+	float:right;
+	padding: 0px 0px 0px 1px;
+}
+.wrapper1{
+	display:block;
+	float:left;
+	margin:10px;
+}
+.box .box_content div{
+	padding: 4px 8px 8px 8px; /* TR BL*/
+	line-height:17px;
+}
+.box .box_content h1{
+	font-weight: bold;
+	font-size: 13px;
+	line-height:20px;
+}
+
+/*-------------widget---------------*/
+div#page > div{ 
+  display:block;
+	float:left;
+	margin:10px;
+}
+.widget{
+	float:left;
+	width:100%;
+	display: block;
+	border: 1px solid #CFDFDF;
+	margin-bottom:12px;
+}
+.widget span.control{
+	display: block;
+  position:absolute;  
+  right:0px;
+  top:0px;
+}
+.widget span.control img{
+	cursor: default;
+	float:right;
+	padding: 0px 0px 0px 1px;
+}
+.widget_nw {
+	padding-left: 2px;
+	background-color: #DFDFDF;
+	height:18px;
+	line-height:18px;
+}
+
+.widget_sw{
+	display: none;
+}
+
+.widget_content {
+	padding: 4px 8px 8px 8px; /* TR BL*/
+	line-height:17px;
+}
+.widget_content h1{
+	font-weight: bold;
+	font-size: 12px;
+	line-height:24px;
+}
+.widget_statusbar {
+	background:transparent url(http://localhost:3000/images/default/bottom_right.gif) repeat-x right top;
+	font-size:8px;
+	height:15px;
+	margin-left:11px;
+}   
+     
+.widget_draggable {
+  cursor:move;
+}   
+
+/* Ghost */
+.widget_ghost {
+  background:#FFF; 
+  opacity: 0.5;  
+  filter:alpha(opacity=50);	
+  position:relative;  
+  border: 3px dashed #F00;      
+  margin:0px;
+  padding:0;
+}
+
+ul.announcement{
+	list-style-image: url(img/ul1.png);
+}
+ul.announcement li{
+	margin-left:20px;
+}

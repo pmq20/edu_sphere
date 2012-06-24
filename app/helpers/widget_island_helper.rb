@@ -1,0 +1,2 @@
+module WidgetIslandHelper
+end

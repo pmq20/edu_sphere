@@ -1,0 +1,90 @@
+h1 {
+  font-size: 40px;
+  line-height:40px;
+  text-align:center;
+}
+
+h2 {
+  font-size: 16px;
+  line-height:20px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 12px;
+}   
+
+#page {
+  margin: 10px auto;
+}
+
+#page1 {  
+  float:left;
+  width:45%;
+}
+
+#page2 {
+  float:right;
+  width:45%;
+}
+
+#widget_col_0 { 
+  float:left;
+  width: 30%;  
+  background:#E6E6E6;
+}
+
+#widget_col_1 {
+  width: 50%;
+  float:left;
+  background:#CCC;
+}   
+
+#widget_col_2 { 
+  float:left;
+  width: 20%;  
+  background:#B3B3B3;
+}   
+
+#widget_col_3 { 
+  float:left;
+  width: 40%;  
+  background:#B3B3B3;
+}   
+
+#widget_col_4 { 
+  float:left;
+  width: 60%;  
+  background:#E6E6E6;
+}   
+
+#control_buttons {
+  position:absolute;  
+  right:0px;
+  top:10px; 
+  width: 50px;    
+}                
+
+#edit_button {
+  position:relative;   
+  float:left;
+  width:16px;
+  height:16px;
+  background: url(../images/edit.png);    
+  behavior: url(png.htc);   
+  margin-right:5px;
+}
+
+#delete_button {
+  position:relative;   
+  float:left;
+  width:16px;
+  height:16px;
+  background: url(../images/delete.png);
+  behavior: url(png.htc);
+  margin-right:5px;
+}
+

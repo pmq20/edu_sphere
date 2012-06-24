@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>EduSphere <%= EDUSPHERE_VERSION %><%= yield :pagetitle %></title>
+	<%= javascript_include_tag 'prototype' %>
+	<%= javascript_include_tag 'scriptaculous' %>
+	<%= javascript_include_tag 'portal' %>	
+	<%= calendar_date_select_includes %>
+	<%= javascript_include_tag 'application' %>
+	<%= stylesheet_link_tag 'default' %>
+</head>
+<body>
+	<div id="header_wrapper">
+	<div id="logo">
+		<%= image_tag 'logo.png'%>
+	</div>
+	<div id="top0">
+		<span class="topblock"><%= image_tag 'topblock.png'%></span><%if logged_in?%><span class="username"><%=image_tag 'username.png'%>&nbsp;<%= current_user.login %></span><span>系统管理员</span><span class="pic"><%= image_tag 'wrench_8F57A7.png'%></span><span>编辑个人设定</span><span class="pic"><nobr class="cursor_qstmark"><%= image_tag 'qstmark_8F57A7.png'%></nobr></span><span onclick="redirect_to('<%= logout_url %>')">退出</span><%else%><span>说明说明说明</span><span>忘记密码</span><span onclick="redirect_to('<%= signup_url %>')">注册新用户</span><span class="pic"><nobr class="cursor_qstmark"><%= image_tag 'qstmark_8F57A7.png'%></nobr></span><span onclick="redirect_to('<%= login_url %>')">登陆</span><%end%>
+	</div>
+	<div class="cleanner"></div>
+	<div id="top1">
+		<a href="#">新建页面</a><a href="#">编辑页面</a><a href="#">用户权限分配</a><label for="search">搜索:</label><input type="text" name="search" value="" /><%= image_tag 'search.png'%><%= image_tag 'searchx.png'%>
+	</div>
+	<div class="cleanner"></div>
+	<div id="navigation">
+		<ul>
+			<li class="arrowleft">&nbsp;</li>
+			<li class="arrow"><%= image_tag 'a1_0.png'%><%= image_tag 'a2_0.png'%></li>
+			<li class="selected"><%= link_to '首页',root_path %></li>
+			<li><a href="#">数据录入</a></li>
+			<li><a href="#">数据录入</a></li>
+			<li><a href="#">数据录入</a></li>
+			<li><a href="#">数据录入</a></li>
+			<li><a href="#">数据录入</a></li>
+			<li><a href="#">数据挖掘</a></li>
+			<li><a href="#">数据挖掘</a></li>
+		</ul>
+	</div>
+	<div id="navigation_slv">
+		<ul>
+			<li class="arrowleft"><a href="#">&nbsp;</a></li>
+			<li><a href="#">学籍录入</a></li>
+			<li><a href="#">评语录入</a></li>
+			<li><a href="#">设置开设年级</a></li>
+			<li class="selected"><a href="#">设置班级任课教师</a></li>
+			<li><a href="#">学籍变动</a></li>
+		</ul>
+	</div>
+	</div>
+	<div id="content">
+	<%= yield %>
+	</div>
+</body>
+</html>
